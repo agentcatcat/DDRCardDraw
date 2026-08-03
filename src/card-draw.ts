@@ -35,11 +35,11 @@ export function getDrawnChart(
   chart: Chart,
 ): EligibleChart {
   return {
-    name: currentSong.name,
+    name: chart.name || currentSong.name,
     jacket: chart.jacket || currentSong.jacket,
-    nameTranslation: currentSong.name_translation,
-    artist: currentSong.artist,
-    artistTranslation: currentSong.artist_translation,
+    nameTranslation: chart.name_translation || currentSong.name_translation,
+    artist: chart.artist || currentSong.artist,
+    artistTranslation: chart.artist_translation || currentSong.artist_translation,
     bpm: chart.bpm || currentSong.bpm,
     level: chart.lvl,
     granularLevel: chart.sanbaiTier,
@@ -50,6 +50,7 @@ export function getDrawnChart(
     song: currentSong,
     dateAdded: currentSong.date_added,
     folder: currentSong.folder,
+    scrollSpeedModifier: chart.scrollSpeedModifier || currentSong.scrollSpeedModifier,
     // Fill in variant data per game
     diffAbbr: getDiffAbbr(gameData, chart.diffClass),
     diffColor: getDifficultyColor(gameData, chart.diffClass),

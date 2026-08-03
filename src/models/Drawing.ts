@@ -19,6 +19,7 @@ export interface EligibleChart {
   dateAdded?: string;
   song: Song;
   folder?: string;
+  scrollSpeedModifier?: string;
 }
 
 export const CHART_PLACEHOLDER = "PLACEHOLDER";

@@ -156,6 +156,10 @@
           "remyLink": {
             "type": "string"
           },
+          "scrollSpeedModifier": {
+            "type": "string",
+            "description": "Used for songs with unusual scroll velocity"
+          },
           "extras": {
             "type": "array",
             "items": {
@@ -211,9 +215,33 @@
         "author": {
           "type": "string"
         },
+        "name": {
+          "type": "string",
+          "description": "per-chart song title"
+        },
+        "name_translation": {
+          "type": "string",
+          "description": "per-chart song title translation"
+        },
+        "artist": {
+          "type": "string",
+          "description": "per-chart artist name"
+        },
+        "artist_translation": {
+          "type": "string",
+          "description": "per-chart artist name translation"
+        },
         "bpm": {
           "type": "string",
           "description": "per-chart BPM range, if one applies"
+        },
+        "date_added": {
+            "type": "string",
+            "description": "per-chart added date, for charts added after initial release (ex. SDVX GRV)"
+        },
+        "scrollSpeedModifier": {
+            "type": "string",
+            "description": "per-chart scroll velocity modifier"
         },
         "extras": {
           "type": "array",

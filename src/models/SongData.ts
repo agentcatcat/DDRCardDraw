@@ -118,6 +118,10 @@ export interface Song {
   saIndex?: string;
   remyLink?: string;
   /**
+   * Used for songs with unusual scroll velocity
+   */
+  scrollSpeedModifier?: string;
+  /**
    * Holds cosmetic only info about a song
    */
   extras?: string[];
@@ -151,9 +155,33 @@ export interface Chart {
   jacket?: string;
   author?: string;
   /**
+   * per-chart song title
+   */
+  name?: string;
+  /**
+   * per-chart song title translation
+   */
+  name_translation?: string;
+  /**
+   * per-chart artist name
+   */
+  artist?: string;
+  /**
+   * per-chart artist name translation
+   */
+  artist_translation?: string;
+  /**
    * per-chart BPM range, if one applies
    */
   bpm?: string;
+  /**
+   * per-chart added date, for charts added after initial release (ex. SDVX GRV)
+   */
+  date_added?: string;
+  /**
+   * per-chart scroll velocity modifier
+   */
+  scrollSpeedModifier?: string;
   /**
    * Holds cosmetic only info about a chart
    */
