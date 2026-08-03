@@ -175,10 +175,6 @@ export interface Chart {
    */
   bpm?: string;
   /**
-   * per-chart added date, for charts added after initial release (ex. SDVX GRV)
-   */
-  date_added?: string;
-  /**
    * per-chart scroll velocity modifier
    */
   scrollSpeedModifier?: string;
