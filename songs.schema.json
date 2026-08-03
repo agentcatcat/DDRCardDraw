@@ -235,10 +235,6 @@
           "type": "string",
           "description": "per-chart BPM range, if one applies"
         },
-        "date_added": {
-            "type": "string",
-            "description": "per-chart added date, for charts added after initial release (ex. SDVX GRV)"
-        },
         "scrollSpeedModifier": {
             "type": "string",
             "description": "per-chart scroll velocity modifier"
